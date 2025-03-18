@@ -64,6 +64,15 @@ Local Zones: AWS Local Zones are extensions of AWS regions that place servers cl
 Naming Convention: Local Zones are labeled with the region name followed by the physical location, such as US East One (DFW1A) for Dallas, Texas.
 Practical Use: For most applications, using a nearby region like US East One is sufficient, but Local Zones can be beneficial for applications needing ultra-low latency.
 
-## 
+## Learn how to create an EC2 instance
 
+Launching an Instance: Navigate to the EC2 service in the AWS console and click on "Launch Instance". Select "Launch Instance" from the dropdown.
+Choosing an AMI: Select an Amazon Machine Image (AMI), such as Ubuntu Server 22.04 LTS, which includes the operating system for your instance.
+Instance Type: Choose an instance type, like t2.micro, which is suitable for low-cost, general-purpose use.
+
+## What is the best EC2 instance type?
+
+Instance Families: EC2 instances are grouped into families optimized for different workloads, such as T and M for general purpose, C for compute-optimized, and R and X for memory-optimized.
+Burstable CPU: T instances use a burstable CPU threshold, allowing them to accumulate CPU credits when usage is low and use these credits for higher performance when needed.
+Instance Sizing: Instances come in various sizes (e.g., t2.micro, t3.medium) that offer different levels of resources like memory, virtual CPUs, and networking speed. Larger sizes provide more resources.
 
