@@ -156,6 +156,7 @@ Instance Sizing: Instances come in various sizes (e.g., t2.micro, t3.medium) tha
 - **SQS (Simple Queue Service)**: Message queuing for decoupling applications.  
 
 ## DevOps with AWS  
+- **DevOpsGuru** : Uses ML to detect performance anomalies in AWS services.
 - **CodePipeline**: CI/CD automation for building and deploying applications.  
 - **CodeBuild**: Fully managed build service.  
 - **CodeDeploy**: Automated deployment service.  
@@ -164,6 +165,7 @@ Instance Sizing: Instances come in various sizes (e.g., t2.micro, t3.medium) tha
 - **X-Ray**: Traces application requests and identifies performance bottlenecks.  
 
 ## Security with AWS  
+- **CodeGuru** : Reviews application code for performance improvements and security vulnerabilities.
 - **IAM**: Identity and access management for users and permissions.  
 - **Cognito**: Authentication and user identity management.  
 - **Shield**: DDoS protection service.  
