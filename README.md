@@ -43,7 +43,7 @@ graph TB
 ```
 
 
-[!NOTE] Having the basic understanding of how computer, networking and servers works is quite essential.
+### Having the basic understanding of how computer, networking and servers works is quite essential.
 
 The aws account can be created from the link www.asw.amazon.com
 
