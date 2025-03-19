@@ -59,7 +59,7 @@ Root account has features:
 
 AWS tells to use the MFA for Root account
 
-yCreating an IAM User Group: In the AWS console, navigate to IAM, and create a new user group. Name it appropriately (e.g., "admins") and attach the necessary permission policies.
+Creating an IAM User Group: In the AWS console, navigate to IAM, and create a new user group. Name it appropriately (e.g., "admins") and attach the necessary permission policies.
 Assigning Permissions: Use the Administrator Access policy for broad permissions or create custom policies for specific access needs, following the principle of least privilege.
 Amazon Resource Names (ARNs): Each IAM user group and other AWS resources have a unique ARN, which helps in managing and linking resources within AWS.
 
@@ -109,4 +109,69 @@ Instance Type: Choose an instance type, like t2.micro, which is suitable for low
 Instance Families: EC2 instances are grouped into families optimized for different workloads, such as T and M for general purpose, C for compute-optimized, and R and X for memory-optimized.
 Burstable CPU: T instances use a burstable CPU threshold, allowing them to accumulate CPU credits when usage is low and use these credits for higher performance when needed.
 Instance Sizing: Instances come in various sizes (e.g., t2.micro, t3.medium) that offer different levels of resources like memory, virtual CPUs, and networking speed. Larger sizes provide more resources.
+
+# AWS Services Breakdown  
+
+## IaaS Compute  
+- **EC2**: Virtual servers in the cloud for running applications.  
+- **ECS**: Managed container service for running Docker containers.  
+- **EKS**: Kubernetes-based container orchestration service.  
+- **Lambda**: Serverless computing for running code without provisioning servers.  
+- **Elastic Beanstalk**: PaaS for deploying web applications without managing infrastructure.  
+
+## IaaS Networking  
+- **VPC**: Virtual network for launching AWS resources securely.  
+- **Direct Connect**: Private, high-speed connection between AWS and on-premises.  
+- **Route 53**: Scalable DNS and domain management service.  
+- **Internet Gateway**: Enables public internet access for VPC resources.  
+- **NAT Gateway**: Provides internet access to private subnet resources.  
+- **Global Accelerator**: Improves application availability and performance across regions.  
+- **ALB (Application Load Balancer)**: Distributes HTTP/HTTPS traffic efficiently.  
+- **NLB (Network Load Balancer)**: Handles high-performance, low-latency traffic.  
+
+## IaaS Storage  
+- **S3**: Scalable object storage for any type of data.  
+- **EBS**: Block storage for EC2 instances.  
+- **EFS**: Scalable file storage that can be mounted across multiple instances.  
+- **Glacier**: Low-cost, long-term archival storage.  
+
+## DBaaS (Database as a Service)  
+- **RDS**: Managed relational database with support for MySQL, PostgreSQL, SQL Server, etc.  
+- **Aurora**: High-performance, managed relational database compatible with MySQL/PostgreSQL.  
+- **DynamoDB**: NoSQL key-value and document database.  
+- **Redshift**: Data warehouse service optimized for analytics.  
+- **Neptune**: Graph database for highly connected datasets.  
+- **Database Migration Service (DMS)**: Migrates and synchronizes databases across environments.  
+
+## PaaS (Platform as a Service)  
+- **Elastic Beanstalk**: Simplifies deployment and management of applications.  
+- **AppSync**: Manages GraphQL APIs for mobile and web apps.  
+- **API Gateway**: Manages RESTful APIs and integrates with AWS services.  
+
+## SaaS (Software as a Service)  
+- **Workspaces**: Cloud-based virtual desktops.  
+- **Chime**: Video conferencing and messaging platform.  
+- **SES (Simple Email Service)**: Scalable email sending service.  
+- **SNS (Simple Notification Service)**: Pub/sub messaging and push notifications.  
+- **SQS (Simple Queue Service)**: Message queuing for decoupling applications.  
+
+## DevOps with AWS  
+- **CodePipeline**: CI/CD automation for building and deploying applications.  
+- **CodeBuild**: Fully managed build service.  
+- **CodeDeploy**: Automated deployment service.  
+- **CloudFormation**: Infrastructure as Code (IaC) for managing AWS resources.  
+- **Terraform**: Third-party IaC tool for automating AWS infrastructure.  
+- **X-Ray**: Traces application requests and identifies performance bottlenecks.  
+
+## Security with AWS  
+- **IAM**: Identity and access management for users and permissions.  
+- **Cognito**: Authentication and user identity management.  
+- **Shield**: DDoS protection service.  
+- **WAF (Web Application Firewall)**: Protects web apps from malicious traffic.  
+- **Inspector**: Scans EC2 instances for vulnerabilities.  
+- **GuardDuty**: Monitors AWS accounts for suspicious activity.  
+- **Macie**: Uses ML to detect sensitive data stored in S3.  
+- **CloudTrail**: Logs AWS API calls for auditing and compliance.  
+- **Detective**: Investigates security incidents and root causes.  
+- **Systems Manager**: Provides security patching, automation, and monitoring for EC2.  
 
