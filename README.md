@@ -5,9 +5,43 @@
 You may not use all the services, but, you should know what you should use when you need it. 
 
 ## we gonna learn about:
-1. Computing, servers
-2. Code platforms to deploy your code
-3. Machine learning for your projects
+
+```mermaid
+graph TB
+    a[AWS]
+    b[AWS Essential Setup]
+    c[IaaS Compute]
+    d[IaaS Networking]
+    e[IaaS Storage]
+    f[DBaaS]
+    g[PaaS]
+    h[SaaS]
+    i[DevOps with AWS]
+    j[Security with AWS]
+
+    a --> b
+    a --> c
+    a --> d
+    a --> e
+    a --> f
+    a --> g
+    a --> h
+    a --> i
+    a --> j
+
+    b --> c
+    b --> d
+    b --> e
+    c --> f
+    c --> i
+    d --> i
+    e --> f
+    f --> g
+    g --> h
+    i --> j
+
+```
+
 
 [!NOTE] Having the basic understanding of how computer, networking and servers works is quite essential.
 
